@@ -10,6 +10,9 @@ public class BannerAdsManager : MonoBehaviour
     [SerializeField]
     private string bannerADUnitId = "";
 
+    [SerializeField]
+    private string placementId = "";
+
     private LevelPlayBannerAd bannerAd;
 
     LevelPlayAdSize adSize = LevelPlayAdSize.BANNER;
@@ -25,7 +28,7 @@ public class BannerAdsManager : MonoBehaviour
             bannerADUnitId,
             adSize,
             AdPos,
-            placementName: "734fef40-e8e3-48a5-92df-2177b3e6ad2f"
+            placementId
         );
 
         bannerAd.OnAdLoaded += BannerOnAdLoadedEvent;
